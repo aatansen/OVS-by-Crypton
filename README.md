@@ -3,9 +3,7 @@ Crypton Group Project file.
 This is a simple project for our SE lab. Me and my Team-mates create this project where a user can register as a candidate/voter and participate in online voting system.
 
 <div align="center">
-
-**[Click here to view our project on web](https://ovs-by-crypton.000webhostapp.com)**
-
+<a href="https://ovs-by-crypton.000webhostapp.com" target="_blank"><strong>Click here to view our project on web</strong></a>
 </div>
 
 ### Crypton Group Members:
