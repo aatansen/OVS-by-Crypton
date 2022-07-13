@@ -3,7 +3,7 @@ Crypton Group Project file.
 This is a simple project for our SE lab. Me and my Team-mates create this project where a user can register as a candidate/voter and participate in online voting system.
 
 <div align="center">
-<a href="https://ovs-by-crypton.000webhostapp.com" target="_blank"><strong>Click here to view our project on web</strong></a>
+<a href="https://ovs-by-crypton.000webhostapp.com" target="_blank"><strong>Click here to view our project on web (Only Front-end part has been deployed)</strong></a>
 </div>
 
 ### Crypton Group Members:
@@ -32,11 +32,15 @@ This is a simple project for our SE lab. Me and my Team-mates create this projec
 - [Visual Studio Code](https://code.visualstudio.com)
 - [XAMPP v3.3.0](https://www.apachefriends.org/download.html)
 
+### We are deploying our project:
+
+- [000Webhost](https://www.000webhost.com/)
+
 # Task for week 1 (Front-end)
--   [x] Design pages in **[Figma](https://shorturl.click/jyPX4)** by **[Tansen](https://github.com/aatansen)**
--   [x] Implement **[Login Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/index.php)** by **[Antora Ghosh](https://github.com/antoraghosh)**
--   [x] Implement **[Registration Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/partials/registration.php)** by **[Afsana Mim](https://github.com/afsanamim506)**
--   [x] Implement **[Voting Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/partials/dashboard.php)** by **[Khalid Mahmud](https://github.com/skhalidmahmud)**
+-   [x] Design pages in **[Figma](https://www.figma.com/file/eIWOfO0fmGNBkKlb2r2M49/OVS-by-Crypton)** by **[Tansen](https://github.com/aatansen)**
+-   [x] Implement **[Login Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/index.php)** by **[Antora Ghosh](https://github.com/antoraghosh)** --> **[View on web](https://ovs-by-crypton.000webhostapp.com/)**
+-   [x] Implement **[Registration Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/partials/registration.php)** by **[Afsana Mim](https://github.com/afsanamim506)** --> **[View on web](https://ovs-by-crypton.000webhostapp.com/partials/registration.php)**
+-   [x] Implement **[Voting Page](https://github.com/aatansen/OVS-by-Crypton/blob/main/partials/dashboard.php)** by **[Khalid Mahmud](https://github.com/skhalidmahmud)** --> **[View on web](https://ovs-by-crypton.000webhostapp.com/partials/dashboard.php)**
 -   [x] Fix error and deploy **[website](https://ovs-by-crypton.000webhostapp.com)** by **[Tansen](https://github.com/aatansen)**
 # Task for week 2 (Back-end)
 -   [ ] Make Front-end Interactive by **[Tansen](https://github.com/aatansen)**
