@@ -16,9 +16,9 @@
     <div class="bg-info py-4">
         <h2 class="text-center">Login</h2>
         <div class="container text-center">
-            <form action="#" method="POST">
+            <form action="./actions/login.php" method="POST">
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="username" placeholder="Enter your username" required="required">
+                    <input class="form-control w-50 m-auto" type="text" name="username" placeholder="Enter your name" required="required">
                 </div>
                 <div class="mb-3">
                     <input class="form-control w-50 m-auto" type="text" name="nid" placeholder="Enter your 10 digit NID number" required="required" minlength="10" maxlength="10">
