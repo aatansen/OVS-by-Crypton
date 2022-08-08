@@ -19,10 +19,15 @@ if ($_SESSION['status'] == 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Voting System - Dashboard</title>
-    <!-- Bootstrap CSS link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS link Online  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <!-- Bootstrap CSS link offline  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Bootstrap JS link offline  -->
+    <script src="../css/bootstrap.min.js"></script>
     <!-- Custom CSS link  -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="bg-secondary text-light">
@@ -31,7 +36,7 @@ if ($_SESSION['status'] == 1) {
         <a href="../partials/logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
         <h1 class="my-3">Online Voting System</h1>
         <div class="row my-5">
-            <!-- Candidates -->  
+            <!-- Candidates -->
             <div class="col md-7">
                 <?php
                 if (isset($_SESSION['candidate'])) {
@@ -99,12 +104,12 @@ if ($_SESSION['status'] == 1) {
                 <strong class="text-dark">Status: </strong>
                 <?php echo $status; ?><br>
                 <strong class="text-dark">Voted to: </strong>
-                <?php 
-                if($data['voted_to']==""){
+                <?php
+                if ($data['voted_to'] == "") {
                     echo '<span class="text-danger">Updating</span>';
-                }else{
-                echo $_SESSION['voted_to']; 
-                }?>
+                } else {
+                    echo $_SESSION['voted_to'];
+                } ?>
             </div>
         </div>
 
