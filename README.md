@@ -2,10 +2,6 @@
 Crypton Group Project file.
 This is a simple project for our SE lab. Me and my Team-mates create this project where a user can register as a candidate/voter and participate in online voting system.
 
-<div align="center">
-<a href="https://ovs-by-crypton.000webhostapp.com" target="_blank"><strong>Click here to view our project on web (testing deployment *not working properly*)</strong></a>
-</div>
-
 ### Crypton Group Members:
 
 - [Tansen](https://github.com/aatansen)
@@ -50,12 +46,16 @@ This is a simple project for our SE lab. Me and my Team-mates create this projec
 
 # Task Before Final Presentation
 
-- [ ] Check duplicate photo
-- [ ] Fix session
-- [ ] beatify Front-end
-- [ ] Register as voter only
-- [ ] Strong password
-- [ ] Reset password
-- [ ] Implement Admin
-- [ ] Candidate assign by admin
+- [x] Fix session by **[Tansen](https://github.com/aatansen)**
+- [x] NID field number only by **[Tansen](https://github.com/aatansen)**
+- [x] Only jpg format will be accepted by **[Tansen](https://github.com/aatansen)**
+- [x] Simple duplicate image check by **[Tansen](https://github.com/aatansen)**
+- [x] ERD change by **[Tansen](https://github.com/aatansen)**
+- [x] Print new ERD,DFD by **[Tansen](https://github.com/aatansen)** , **[Khalid Mahmud](https://github.com/skhalidmahmud)** , **[Afsana Mim](https://github.com/afsanamim506)** , **[Antora Ghosh](https://github.com/antoraghosh)**
+- [x] hide password while typing by **[Tansen](https://github.com/aatansen)**
+- [ ] Strong password by **[Tansen](https://github.com/aatansen)**
+- [ ] beatify Front-end  **[Khalid Mahmud](https://github.com/skhalidmahmud)** , **[Afsana Mim](https://github.com/afsanamim506)** , **[Antora Ghosh](https://github.com/antoraghosh)**
+- [ ] Implement Admin by **[Tansen](https://github.com/aatansen)**
+- [ ] Register as voter only by **[Tansen](https://github.com/aatansen)**
+- [ ] Candidate assign by admin by **[Tansen](https://github.com/aatansen)**
 
