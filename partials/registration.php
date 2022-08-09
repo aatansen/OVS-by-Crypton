@@ -14,14 +14,9 @@
     <!-- Bootstrap JS link offline  -->
     <script src="../css/bootstrap.min.js"></script>
 
-    <!-- script to input number only in nid field -->
-    <script type="text/javascript">
-        function numberOnly(id) {
-            var element = document.getElementById(id);
-            element.value = element.value.replace(/[^0-9]/gi, "");
-        }
-    </script>
-    <!-- script to input number only in nid field -->
+    <!-- script -->
+    <script src="../css/main.js"></script>
+    <!-- script -->
 </head>
 
 <body class="bg-dark">
@@ -31,20 +26,20 @@
         <div class="container text-center">
             <form action="../actions/register.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="username" placeholder="Enter your name" required="required">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="text" name="username" placeholder="Enter your name" required="required">
                 </div>
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="nid" id="NumOnlyNid" placeholder="Enter your 10 digit NID number" oninput="numberOnly(id);" required="required" minlength="10" maxlength="10" />
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="text" name="nid" id="NumOnlyNid" placeholder="Enter your 10 digit NID number" oninput="numberOnly(id);" required="required" minlength="10" maxlength="10" />
                 </div>
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="password" placeholder="Enter your password" required="required" minlength="7">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="password" name="password" placeholder="Enter your password" required="required" minlength="7">
                 </div>
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="cpassword" placeholder="Confirm password" required="required" minlength="7">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="password" name="cpassword" placeholder="Confirm password" required="required" minlength="7">
                 </div>
                 <div class="mb-3">
 
-                    <input class="form-control w-50 m-auto" type="file" name="photo" data-buttonText="Your label here." required="required">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="file" name="photo" accept="image/jpeg" data-buttonText="Your label here." required="required">
                 </div>
                 <div class="mb-3">
                     <select name="roles" class="form-select w-50 m-auto" required="required">

@@ -106,7 +106,7 @@ if ($_SESSION['status'] == 1) {
                 <strong class="text-dark">Voted to: </strong>
                 <?php
                 if ($_SESSION['voted_to'] == "") {
-                    echo '<span class="text-danger">Updating</span>';
+                    echo '<span class="text-danger">None</span>';
                 } else {
                     echo $_SESSION['voted_to'];
                 } ?>

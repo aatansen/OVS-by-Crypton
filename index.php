@@ -11,17 +11,13 @@
 
     <!-- Bootstrap CSS link offline  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- Bootstrap JS link offline  -->
     <script src="css/bootstrap.min.js"></script>
 
-    <!-- script to input number only in nid field -->
-    <script type="text/javascript">
-        function numberOnly(id) {
-            var element = document.getElementById(id);
-            element.value = element.value.replace(/[^0-9]/gi, "");
-        }
-    </script>
-    <!-- script to input number only in nid field -->
+    <!-- script -->
+    <script src="css/main.js"></script>
+    <!-- script -->
 
 </head>
 
@@ -32,13 +28,13 @@
         <div class="container text-center">
             <form action="./actions/login.php" method="POST">
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="username" placeholder="Enter your name" required="required">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="text" name="username" placeholder="Enter your name" required="required">
                 </div>
                 <div class="mb-3">
-                <input class="form-control w-50 m-auto" type="text" name="nid" id="NumOnlyNid" placeholder="Enter your 10 digit NID number" oninput="numberOnly(id);" required="required" minlength="10" maxlength="10" />
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="text" name="nid" id="NumOnlyNid" placeholder="Enter your 10 digit NID number" oninput="numberOnly(id);" required="required" minlength="10" maxlength="10" />
                 </div>
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="password" placeholder="Enter your password" required="required">
+                    <input class="form-control w-50 m-auto" autocomplete="off" type="password" name="password" placeholder="Enter your password" required="required">
                 </div>
                 <div class="mb-3">
                     <select name="roles" class="form-select w-50 m-auto" required="required">
