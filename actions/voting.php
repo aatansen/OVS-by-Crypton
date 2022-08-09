@@ -13,14 +13,13 @@ $updatestatus = mysqli_query($con, "UPDATE `userdata` SET `status`='1' , `voted_
 if ($updatevotes && $updatestatus) {
     $getcandidate = mysqli_query($con, "SELECT username , photo,votes,id FROM `userdata` WHERE roles = 'candidate'");
     $candidate = mysqli_fetch_all($getcandidate, MYSQLI_ASSOC);
-    //testing
-    $sql = "SELECT voted_to from `userdata`";
-    $voted = mysqli_query($con, $sql);
-    $vdata = mysqli_fetch_array($voted, MYSQLI_ASSOC);
-    $_SESSION['voted_to']=$vdata;
-    //testing
     $_SESSION['candidate'] = $candidate;
+
+    //chanding session data voted_to and status
+    $_SESSION['voted_to'] = $gname;
     $_SESSION['status'] = 1;
+    //chanding session data voted_to and status
+
     echo '<script type="text/javascript">
     alert("Voting Successful");
     window.location="../partials/dashboard.php";
@@ -31,4 +30,3 @@ if ($updatevotes && $updatestatus) {
     window.location="../partials/dashboard.php";
     </script>';
 }
-?>

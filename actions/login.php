@@ -21,7 +21,7 @@ if(mysqli_num_rows($result)>0){
     $data = mysqli_fetch_array($result);
     $_SESSION['id']=$data['id'];
     $_SESSION['status']=$data['status'];
-    $_SESSION['voted_to']=$data['voted_to']; //voted_to is the candidate name
+    $_SESSION['voted_to']=$data['voted_to'];
     $_SESSION['data']=$data;
     
 echo '<script type="text/javascript">

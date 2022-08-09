@@ -4,6 +4,7 @@ if (!isset($_SESSION['id'])) {
     header('location: ../');
 }
 $data = $_SESSION['data'];
+
 if ($_SESSION['status'] == 1) {
     $status = '<b class="text-successs">Voted</br>';
 } else {
@@ -32,7 +33,6 @@ if ($_SESSION['status'] == 1) {
 
 <body class="bg-secondary text-light">
     <div class="container my-5">
-        <a href="../"><button class="btn btn-dark text-light px-3">Back</button></a>
         <a href="../partials/logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
         <h1 class="my-3">Online Voting System</h1>
         <div class="row my-5">
@@ -105,7 +105,7 @@ if ($_SESSION['status'] == 1) {
                 <?php echo $status; ?><br>
                 <strong class="text-dark">Voted to: </strong>
                 <?php
-                if ($data['voted_to'] == "") {
+                if ($_SESSION['voted_to'] == "") {
                     echo '<span class="text-danger">Updating</span>';
                 } else {
                     echo $_SESSION['voted_to'];
