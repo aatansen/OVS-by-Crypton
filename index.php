@@ -8,11 +8,20 @@
     <title>Online Voting System</title>
     <!-- Bootstrap CSS link Online -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    
+
     <!-- Bootstrap CSS link offline  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap JS link offline  -->
     <script src="css/bootstrap.min.js"></script>
+
+    <!-- script to input number only in nid field -->
+    <script type="text/javascript">
+        function numberOnly(id) {
+            var element = document.getElementById(id);
+            element.value = element.value.replace(/[^0-9]/gi, "");
+        }
+    </script>
+    <!-- script to input number only in nid field -->
 
 </head>
 
@@ -26,7 +35,7 @@
                     <input class="form-control w-50 m-auto" type="text" name="username" placeholder="Enter your name" required="required">
                 </div>
                 <div class="mb-3">
-                    <input class="form-control w-50 m-auto" type="text" name="nid" placeholder="Enter your 10 digit NID number" required="required" minlength="10" maxlength="10">
+                <input class="form-control w-50 m-auto" type="text" name="nid" id="NumOnlyNid" placeholder="Enter your 10 digit NID number" oninput="numberOnly(id);" required="required" minlength="10" maxlength="10" />
                 </div>
                 <div class="mb-3">
                     <input class="form-control w-50 m-auto" type="text" name="password" placeholder="Enter your password" required="required">
